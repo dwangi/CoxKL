@@ -15,7 +15,7 @@ Di Wang, Wen Ye, Ji Zhu, Gongjun Xu, Weijing Tang, Matthew Zawistowski, Lars G. 
 ```
 #Install the package, need to install the devtools packages:
 install.packages("devtools")
-devtools::install_github(diwangi/CoxKL")
+devtools::install_github("dwangi/CoxKL")
 ```
 
 ## Simulation example
