@@ -1,4 +1,4 @@
-# DiscreteKL: Kullback-Leibler-Based Cox Models
+# CoxKL: Kullback-Leibler-Based Cox Models
 
 This package is for the paper "Incorporating External Risk Information with the Cox Model under Population Heterogeneity: Applications to Trans-Ancestry Polygenic Hazard Scores".
 
