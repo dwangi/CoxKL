@@ -78,3 +78,17 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP   
 }
+
+static const R_CallMethodDef CallEntries[] = {
+    {"_CoxKL_rev_cumsum", (DL_FUNC) &_CoxKL_rev_cumsum, 1},
+    {"_CoxKL_ddloglik", (DL_FUNC) &_CoxKL_ddloglik, 3},
+    {"_CoxKL_cal_S0", (DL_FUNC) &_CoxKL_cal_S0, 2},
+    {"_CoxKL_ddloglik_2KL_RS", (DL_FUNC) &_CoxKL_ddloglik_2KL_RS, 7},
+    {"_CoxKL_ddloglik_KL_RS", (DL_FUNC) &_CoxKL_ddloglik_KL_RS, 5},
+    {NULL, NULL, 0}
+};
+
+RcppExport void R_init_DiscreteKL(DllInfo *dll) {
+    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
+    R_useDynamicSymbols(dll, FALSE);
+}
